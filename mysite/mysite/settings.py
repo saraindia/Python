@@ -129,6 +129,7 @@ INSTALLED_APPS = (
     'books',
     'polls',
     'github_hook',
+    'django.contrib.sitemaps',
 )
 
 # A sample logging configuration. The only tangible logging
