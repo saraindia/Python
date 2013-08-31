@@ -20,4 +20,5 @@ urlpatterns = patterns('',
     url(r'^time/plus/(\d{1,2})/$', hours_ahead),
     #url(r'^newtime/$', new_datetime),
     url(r'^polls/', include('polls.urls')),
+    url('/hook', include('github_hook.urls'))
 )
