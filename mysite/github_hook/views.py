@@ -4,7 +4,7 @@ from rest_framework.renderers import JSONRenderer
 
 from django.views.decorators.csrf import csrf_exempt
 import json
-from .models import Hook
+from github_hook.models import Hook
 
 class HookView(GenericAPIView):
     renderer_classes = [JSONRenderer]
