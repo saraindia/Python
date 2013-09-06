@@ -6,7 +6,7 @@
 {% block content %}
     <h1> My Blog Archive </h1>
     {% for post in posts %}
-    <div id="summary">
+    <div id="content" class="colMS">
         <h1>
             <a href="{{post.get_absolute_url}}">
                 {{post.title}}

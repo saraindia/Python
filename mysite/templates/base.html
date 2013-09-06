@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -5,13 +6,38 @@
         <title>
             {% block title %}{% endblock %}
         </title>
-		<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}style.css">
+		<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}admin/css/base.css" />
+		<link rel="stylesheet" type="text/css" href="/static/admin/css/dashboard.css" />
+		<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/static/admin/css/ie.css" /><![endif]-->
         </head>
-    <body>
-        <div class="content">
-            {% block content %}
-            {% endblock %}
-        </div>
-    </body>
+    <body class="login">
+
+	<!-- Container -->
+	<div id="container">
+
+	    
+	    <!-- Header -->
+	    <div id="header">
+	        <div id="branding">
+	          <h1 id="site-name">My Blog</h1>
+	        </div>
+	    </div>
+	    <!-- END Header -->
+
+	    <!-- Content -->
+	    <div id="content" class="colMS">
+	      <div id="content-main">
+	        
+	            {% block content %}
+	            {% endblock %}
+        	</div>
+	        <br class="clear" />
+	    </div>
+	    <!-- END Content -->
+
+	    <div id="footer"></div>
+	</div>
+	<!-- END Container -->
+	</body>
 </html>
 
